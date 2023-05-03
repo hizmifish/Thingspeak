@@ -4,8 +4,8 @@
 #include <WiFiClient.h> // Add WiFiClient library
 
 WiFiClient  client;
-unsigned long counterChannelNumber = 2131828;                // Channel ID
-const char * myCounterReadAPIKey = "5FYNPAPO0OO4PEZW";      // Read API Key
+unsigned long counterChannelNumber = ;                      // Channel ID
+const char * myCounterReadAPIKey = "";                      // Read API Key
 const int FieldNumber1 = 1;                                 // The field you wish to read
 const int FieldNumber2 = 2;                                 // The field you wish to read
 
@@ -15,7 +15,7 @@ void setup()
   Serial.begin(115200);
   Serial.println();
 
-  WiFi.begin("LAB INOVASI_2.4G", "Ftkee@1000");                 // write wifi name & password           
+  WiFi.begin("", "");             // write wifi name & password           
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
